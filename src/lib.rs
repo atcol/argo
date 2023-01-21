@@ -1,3 +1,4 @@
+//! The Argo CD, Events and Workflows objects auto generated from its schema.
 use serde_derive::{Deserialize, Serialize};
 
 schemafy::schemafy!(
