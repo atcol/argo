@@ -2,6 +2,8 @@
 name = "argo-crds"
 version = "0.1.0"
 edition = "2021"
+description = "Structs and tools for Argo's CRDs"
+license = "MIT"
 
 [dependencies]
 schemafy = "0.6"
