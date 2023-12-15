@@ -1,19 +1,29 @@
 [package]
 name = "argo-crds"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2021"
-description = "Structs and tools for Argo's CRDs"
+description = "Structs and tools for Argo CD, Workflows and Events"
 license = "MIT"
+authors = ["Alex Collins"]
+keywords = ["argo", "argo-cd", "argo-workflows", "argo-events"]
+readme = "README.md"
+repository = "https://github.com/atcol/argo-crds"
+homepage = "https://github.com/atcol/argo-crds"
 
 [dependencies]
-schemafy = "0.6"
-serde = "1.0"
-serde_derive = "1.0"
+typify = "0.0.14"
+serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-serde_yaml = "0.9.17"
-
-[dev-dependencies]
-reqwest = { version = "0.11", features = ["blocking"] }
+chrono = { version = "0.4.31", features = ["serde"] }
+reqwest = { version = "0.11.22", features = ["blocking"] }
+serde_yaml = "0.9.27"
 
 [build-dependencies]
-reqwest = { version = "0.11", features = ["blocking"] }
+typify = "0.0.15"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4.31", features = ["serde"] }
+prettyplease = "0.2.15"
+syn = "2.0.41"
+schemars = "0.8.16"
+reqwest = { version = "0.11.22", features = ["blocking"] }
