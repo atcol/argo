@@ -1,7 +1,7 @@
 #[test]
 fn test_parse_workflow() {
     let body = reqwest::blocking::get(
-        "https://raw.githubusercontent.com/argoproj/argo-workflows/v3.4.4/examples/dag-diamond.yaml"
+        "https://raw.githubusercontent.com/argoproj/argo-workflows/v3.5.2/examples/dag-diamond.yaml"
     )
     .unwrap()
     .text()
